@@ -72,8 +72,8 @@ The Player class should provide at least the following methods</p>
 <p>incoming is the method used by opponents to shoot at the player’s fleet. The method should check if the square identified by targetRef contains a part of one of the ships in the player’s fleet. If it does then the opponent has had a hit and incoming should return an appropriate message. If it is not a square containing a part of one of the player’s ships then the method should return the word “Miss.”</p>
 
 <p>Consider the following code fragment and note how nextTarget and incoming are used.</p>
-
-```public static void main(String[] args)
+```
+public static void main(String[] args)
 {
 	Player computer = new Player() ;
 	Player human = new Player() ;
@@ -96,7 +96,8 @@ The Player class should provide at least the following methods</p>
 		// successful or not
 		outcome = human.incoming(chosenTarget) ; 
 	}
-}```
+}
+```
 <p>You can include any other methods you feel are necessary to facilitate the efficient realisation of the Player class.
 In addition to the Player class you must write a test method that tests the Player class. The test method should create two instances of the Player class and simulate a game. The test method should terminate when one of the players has won the game (i.e. when one of the player’s shipsRemaining method returns zero). For testing purposes it would be useful if all successful shots were reported to the screen (i.e. BlueJ terminal window). Saving the outputs to the terminal window to a file would also by helpful.</p>
 <h1>Resources Provided</h1>
