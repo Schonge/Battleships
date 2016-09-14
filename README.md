@@ -57,23 +57,23 @@ The Player class should provide at least the following methods</p>
 
 •	shipsRemaining has the following header
 <p align="center"><b>public int shipsRemaining()</b></p>
-shipsRemaining returns an integer value indicating the number of ships the player has remaining (i.e. the number of ships not totally destroyed)
+<p>shipsRemaining returns an integer value indicating the number of ships the player has remaining (i.e. the number of ships not totally destroyed)</p>
 
 •	display has the following header
 <p align="center"><b>public void display()</b></p>
-display displays the player’s fleet grid on the screen
+<p>display displays the player’s fleet grid on the screen</p>
 
 •	nextTarget has the following header
 <p align="center"><b>public String nextTarget()</b></p>
-nextTarget randomly picks a grid square to shoot at in the opponents fleet. The method returns the cell reference (i.e. “F7” or “B3”) of the chosen square.
+<p>nextTarget randomly picks a grid square to shoot at in the opponents fleet. The method returns the cell reference (i.e. “F7” or “B3”) of the chosen square.</p>
 
 •	incoming has the following header
 <p align="center"><b>public String incoming(String targetRef)</b></p>
-incoming is the method used by opponents to shoot at the player’s fleet. The method should check if the square identified by targetRef contains a part of one of the ships in the player’s fleet. If it does then the opponent has had a hit and incoming should return an appropriate message. If it is not a square containing a part of one of the player’s ships then the method should return the word “Miss.”
+<p>incoming is the method used by opponents to shoot at the player’s fleet. The method should check if the square identified by targetRef contains a part of one of the ships in the player’s fleet. If it does then the opponent has had a hit and incoming should return an appropriate message. If it is not a square containing a part of one of the player’s ships then the method should return the word “Miss.”</p>
 
 <p>Consider the following code fragment and note how nextTarget and incoming are used.</p>
-<p align="center>
-public static void main(String[] args)
+
+```public static void main(String[] args)
 {
 	Player computer = new Player() ;
 	Player human = new Player() ;
@@ -96,8 +96,7 @@ public static void main(String[] args)
 		// successful or not
 		outcome = human.incoming(chosenTarget) ; 
 	}
-}
-</p>
+}```
 <p>You can include any other methods you feel are necessary to facilitate the efficient realisation of the Player class.
 In addition to the Player class you must write a test method that tests the Player class. The test method should create two instances of the Player class and simulate a game. The test method should terminate when one of the players has won the game (i.e. when one of the player’s shipsRemaining method returns zero). For testing purposes it would be useful if all successful shots were reported to the screen (i.e. BlueJ terminal window). Saving the outputs to the terminal window to a file would also by helpful.</p>
 <h1>Resources Provided</h1>
