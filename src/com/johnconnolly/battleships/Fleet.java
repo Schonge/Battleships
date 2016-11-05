@@ -1,4 +1,4 @@
-package com.JohnConnolly.Battleships;
+package com.johnconnolly.battleships;
 
 
 public class Fleet

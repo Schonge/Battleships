@@ -1,4 +1,4 @@
-package com.JohnConnolly.Battleships;
+package com.johnconnolly.battleships;
 
 import java.util.Random ;
 
